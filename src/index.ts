@@ -13,6 +13,8 @@ import {
   registerErrorRoute,
   registerHealthRoute,
   registerLoginRoute,
+  registerConsentRoute,
+  registerConsentPostRoute,
   registerRecoveryRoute,
   registerRegistrationRoute,
   registerSettingsRoute,
@@ -42,6 +44,8 @@ app.engine(
 registerStaticRoutes(app)
 registerHealthRoute(app)
 registerLoginRoute(app)
+registerConsentRoute(app)
+registerConsentPostRoute(app)
 registerRecoveryRoute(app)
 registerRegistrationRoute(app)
 registerSettingsRoute(app)
