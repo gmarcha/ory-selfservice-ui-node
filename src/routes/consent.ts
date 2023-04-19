@@ -23,6 +23,8 @@ async function createOAuth2ConsentRequestSession(
 
   const id_token: { [key: string]: any } = {}
 
+  id_token.custom_claim = "custom_claim_value"
+
   if (consentRequest.subject && grantScopes.length > 0) {
     const identity = (
       await identityApi.getIdentity({ id: consentRequest.subject })
